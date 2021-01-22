@@ -1,0 +1,18 @@
+
+
+  <p [ngClass]="{'header-color':true}">Header works</p>
+  <input type="text" [(ngModel)]="name">
+  <textarea  [(ngModel)]="Address"> </textarea>
+  <button (click)="onClickbutton()"> submit
+  </button>
+  <div *ngIf="isonClickPressed">
+
+    My Name is {{name}}
+    <br>
+    <br>
+    Im from {{Address}}
+
+  </div>
+<!--   <ul>
+      <li *ngFor="let user of users">{{user.firstname}}{{user.lastname}}</li>
+  </ul> -->
